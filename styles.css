@@ -73,6 +73,7 @@ main h1 {
     color: #D4ADFC;
     filter: drop-shadow(0px 3px 0px #0C134F);
     font-size: 96pt;
+    font-weight: 300;
     text-align: left;
     margin-bottom: 70px;
     margin-left: 60px;
@@ -82,6 +83,7 @@ main h2 {
     color: #D4ADFC;
     filter: drop-shadow(0px 3px 0px #0C134F);
     font-size: 24pt;
+    font-weight: 300;
     text-align: left;
     width: 70%;
     margin-left: 65px;
