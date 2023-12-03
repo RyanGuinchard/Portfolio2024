@@ -88,6 +88,7 @@ main h2 {
     text-align: left;
     width: 70%;
     margin-left: 65px;
+    margin-bottom: 20px;
 }
 
 .heading-wrapper {
@@ -102,14 +103,15 @@ main h2 {
 }
 
 main img {
-    width: 300px;
+    width: 400px;
     border-radius: 30px;
     margin: 20px;
+    border: 5px solid #0C134F;
 }
 
 main .btn:link {
     display: inline-block;
-    width: 150px;
+    width: 300px;
     padding: 10px 20px;
     background-color: #5C469C;
     color: #D4ADFC;
@@ -117,7 +119,8 @@ main .btn:link {
     border: 2px solid #0C134F;
     border-radius: 5px;
     margin-left: 60px;
-    font-size: 16px;
+    margin-top: -120px;
+    font-size: 22px;
     text-align: center;
 }
 
@@ -131,7 +134,12 @@ main .btn:hover {
     color: #5C469C;
 }
 
-
+ @media only screen and (min-width: 1200px) {
+    /* Styles for full desktop screens */
+    main .btn:link {
+        margin-bottom: 500px;
+    }
+}  
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
     /* Styles for tablets */
@@ -179,6 +187,10 @@ main .btn:hover {
         width: 100%;
         align-items: center;
         justify-content: center;
+    }
+
+    main img {
+        width: 300px;
     }
 
     main .btn:link {
@@ -238,12 +250,17 @@ main .btn:hover {
 
     .heading-wrapper h2 {
         text-align: center;
+        margin: 0 auto;
     }
 
     .image-wrapper {
         width: 100%;
         align-items: center;
         justify-content: center;
+    }
+
+    main img {
+        width: 300px;
     }
 
     main .btn:link {
@@ -257,20 +274,5 @@ main .btn:hover {
 }
 
 
-/*Animations*/
+/*Animations section*/
 
-main h1,
-main h2,
-main img,
-main .btn:link {
-    opacity: 1;
-    transform: scale(1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-main h1:hover,
-main h2:hover,
-main img:hover,
-main .btn:link:hover {
-    transform: scale(1.1);
-}
