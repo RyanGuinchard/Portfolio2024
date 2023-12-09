@@ -53,7 +53,7 @@ body {
 }
 
 main {
-    margin-top: 90px;
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -70,8 +70,8 @@ main h1 {
     font-size: 96pt;
     font-weight: 300;
     text-align: left;
-    margin-bottom: 70px;
-    margin-left: 60px;
+    margin-bottom: 40px;
+    margin-left: 70px;
 }
 
 main h2 {
@@ -81,8 +81,8 @@ main h2 {
     font-weight: 300;
     text-align: left;
     width: 70%;
-    margin-left: 65px;
-    margin-bottom: 20px;
+    margin-left: 70px;
+    margin-bottom: 30px;
 }
 
 .heading-wrapper {
@@ -97,13 +97,13 @@ main h2 {
 }
 
 main img {
-    width: 400px;
+    width: 100%;
+    max-width: 350px;
     border-radius: 30px;
-    margin: 20px;
     border: 5px solid #0C134F;
 }
 
-main .btn:link {
+main .btn:link, main .btn:visited{
     display: inline-block;
     width: 300px;
     padding: 10px 20px;
@@ -112,20 +112,17 @@ main .btn:link {
     text-decoration: none;
     border: 2px solid #0C134F;
     border-radius: 5px;
-    margin-left: 60px;
-    margin-top: -120px;
+    margin-left: 70px;
+    margin-top: -50px;
     font-size: 22px;
     text-align: center;
-}
-
-main .btn:visited {
-    color: #D4ADFC;
-    border: 2px solid #0C134F;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 main .btn:hover {
     background-color: #D4ADFC;
     color: #5C469C;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -188,6 +185,7 @@ main .btn:hover {
 
     main img {
         width: 300px;
+        margin: 20px;
     }
 
     main .btn:link {
@@ -250,6 +248,7 @@ main .btn:hover {
 
     main img {
         width: 300px;
+        margin: 20px;
     }
 
     main .btn:link {
