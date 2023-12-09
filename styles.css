@@ -18,6 +18,7 @@ body {
     position: relative;
     border: 10px solid #0C134F;
     min-height: 100vh;
+    min-width: 100vw;
 }
 
 .top-menu {
