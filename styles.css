@@ -19,19 +19,26 @@ body {
 
 .border-container {
   position: relative;
-  border: 10px solid #0c134f;
+  border: 15px solid #0c134f;
   min-height: 100vh;
   width: 100%;
   box-sizing: border-box;
   overflow: auto;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
 .top-menu {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
-  background-color: #1d267d;
+  width: max-content;
+  background-color: #0c134f;
   padding: 10px 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .top-menu ul {
@@ -40,7 +47,7 @@ body {
 }
 
 .top-menu li {
-  margin: 0 25px;
+  margin: 0 10px;
   font-size: 14pt;
 }
 
@@ -136,6 +143,11 @@ main .btn:hover {
   /* Styles for full desktop screens */
   main .btn:link {
     margin-bottom: 75px;
+  }
+
+  .top-menu li {
+    margin: 0 25px;
+    font-size: 14pt;
   }
 }
 
