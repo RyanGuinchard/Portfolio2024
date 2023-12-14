@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Roboto&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -69,12 +71,18 @@ main {
   margin-top: 80px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: left;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
+}
+
+.contact-page .container {
+    justify-content: center;
+    margin-top: 80px;
 }
 
 main h1 {
@@ -96,6 +104,16 @@ main h2 {
   width: 70%;
   margin-left: 70px;
   margin-bottom: 30px;
+}
+
+.contact-page main {
+    margin-top: 100px;
+}
+
+.contact-page h2 {
+    text-align: center;
+    width: 100%;
+    margin: auto;
 }
 
 .heading-wrapper {
@@ -137,6 +155,22 @@ main .btn:hover {
   background-color: #d4adfc;
   color: #5c469c;
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.contact-box {
+    background-color: #0c134f;
+    height: 300px;
+    width: 600px;
+    border-radius: 20px;
+    margin: auto 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-box h3 {
+    color: #d4adfc;
+    margin-top: 20px;
 }
 
 @media only screen and (min-width: 1200px) {
