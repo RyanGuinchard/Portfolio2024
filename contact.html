@@ -1,33 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Me!</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body class="contact-page">
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/f7c532f32d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="contact-page">
     <div class="border-container">
-        <header>
-            <nav class="top-menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <h2>Contact Me!</h2>
-            <div class="container">
-                <section class="contact-box">
-                    <h3>Send me a Message</h3>
-                </section>
-                <section class="contact-box">
-                    <h3>Get in Touch</h3>
-                </section>
-            </div>
-        </main>
+      <header>
+        <nav class="top-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h2>Contact Me!</h2>
+        <div class="container">
+          <section class="contact-box">
+            <h3>Send me a Message</h3>
+            <form
+              action="mailto:ryanguinchardm9@hotmail.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <label for="email">Email</label>
+              <input type="text" class="contact-input" />
+              <label for="subject">Subject</label>
+              <input type="text" class="contact-input" />
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="20"
+                rows="5"
+                class="contact-input"
+              ></textarea>
+              <input type="submit" value="Submit" class="submit-btn" />
+            </form>
+          </section>
+          <section class="contact-box" id="contact-info">
+            <h3>Get in Touch</h3>
+            <ul>
+              <li>
+                <i class="fa-solid fa-phone-volume fa-2xl"></i> 709-765-2219
+              </li>
+              <li>
+                <i class="fa-solid fa-inbox fa-2xl"></i>
+                RyanGuinchard.dev.@gmail.com
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot fa-2xl"></i> 1234 Fake
+                Street, St John's, NL
+              </li>
+            </ul>
+            <p>
+              <a href="https://www.linkedin.com/in/ryan-guinchard/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl icon"></i></a>
+              <a href="https://github.com/RyanGuinchard" target="_blank"><i class="fa-brands fa-square-github fa-2xl icon"></i></a>
+            </p>
+          </section>
+        </div>
+      </main>
     </div>
-</body>
+  </body>
 </html>

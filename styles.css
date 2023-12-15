@@ -157,15 +157,17 @@ main .btn:hover {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
+/*Contact Page Only*/
 .contact-box {
     background-color: #0c134f;
-    height: 300px;
-    width: 600px;
+    height: max-content;
+    min-height: 400px;
+    width: 400px;
     border-radius: 20px;
     margin: auto 50px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-box h3 {
@@ -173,6 +175,81 @@ main .btn:hover {
     margin-top: 20px;
 }
 
+.contact-box form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.contact-box label {
+  color: #d4adfc;
+  font-size: 12pt;
+  margin: 10px 0 5px 0;
+  align-self: flex-start;
+}
+
+.contact-box .contact-input {
+  width: 90%;
+  min-width: 350px;
+  resize: none;
+  padding: 5px;
+}
+
+.contact-box .submit-btn {
+  background-color: #5c469c;
+  color: #d4adfc;
+  width: 50%;
+  font-size: 14pt;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 15px 20px;
+  border: 2px solid #0c134f;
+  border-radius: 5px;
+  margin-top: 10px; 
+  margin-bottom: 10px; 
+}
+
+.contact-box .submit-btn:hover {
+  background-color: #d4adfc;
+  color: #5c469c;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-box ul {
+  list-style: none;
+  color: #d4adfc;
+  margin-top: 20px;
+}
+
+.contact-box li {
+  margin: 20px auto 40px auto;
+  text-align: left;
+  font-size: 14pt;
+}
+
+.icon.fa-square-github,
+.icon.fa-linkedin {
+  color: #5c469c; 
+  transform: scale(2);
+  margin: auto 30px auto 30px;
+  margin-top: 30px;
+  transition: color 0.3s ease, transform 0.3s ease, margin-top 0.3s ease;
+}
+
+.icon.fa-square-github:hover {
+  color: #d4adfc;
+  transform: scale(2.2); 
+  margin-top: 20px; 
+}
+
+.icon.fa-linkedin:hover {
+  color: #d4adfc;
+  transform: scale(2.2);
+  margin-top: 20px; 
+}
+
+/*Responsive Design*/
 @media only screen and (min-width: 1200px) {
   /* Styles for full desktop screens */
   main .btn:link {
