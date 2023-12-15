@@ -386,4 +386,8 @@ main .btn:hover {
     width: 100%;
     max-width: 200px;
   }
+
+  .contact-page .contact-box {
+    margin-bottom: 50px;
+  }
 }
