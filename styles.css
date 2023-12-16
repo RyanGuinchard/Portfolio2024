@@ -110,10 +110,11 @@ main h2 {
     margin-top: 100px;
 }
 
-.contact-page h2 {
+.contact-page h2,
+.projects-page h2 {
     text-align: center;
     width: 100%;
-    margin: auto;
+    margin: 20px auto;
 }
 
 .heading-wrapper {
@@ -249,6 +250,9 @@ main .btn:hover {
   margin-top: 20px; 
 }
 
+/*Project Page*/
+
+
 /*Responsive Design*/
 @media only screen and (min-width: 1200px) {
   /* Styles for full desktop screens */
@@ -281,7 +285,7 @@ main .btn:hover {
   main {
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
   }
 
   .container {
@@ -323,6 +327,9 @@ main .btn:hover {
     width: 100%;
     max-width: 200px;
   }
+  .contact-page .contact-box {
+    margin-bottom: 50px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -344,7 +351,7 @@ main .btn:hover {
   main {
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
   }
 
   .container {
