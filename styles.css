@@ -252,6 +252,66 @@ main .btn:hover {
 
 /*Project Page*/
 
+.projects-page main {
+  display: flex;
+  align-items: center;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.carousel-item {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: 0;
+}
+
+.repo-link {
+  background-color: #5c469c;
+  color: #d4adfc;
+  padding: 10px 20px;
+  border: 2px solid #0c134f;
+  border-radius: 5px;
+  margin: 10px 5px 10px 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: #5c469c;
+  color: #d4adfc;
+  padding: 10px 20px;
+  border: 2px solid #0c134f;
+  border-radius: 5px;
+  margin: 0 5px 10px 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 50vw;
+  max-width: 400px;
+}
+
+.prev-btn:hover,
+.next-btn:hover,
+.repo-link:hover {
+  background-color: #d4adfc;
+  color: #5c469c;
+}
 
 /*Responsive Design*/
 @media only screen and (min-width: 1200px) {
@@ -396,5 +456,20 @@ main .btn:hover {
 
   .contact-page .contact-box {
     margin-bottom: 50px;
+  }
+
+  .carousel-container{
+    width: 100%;
+  }
+
+  .carousel-btns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .prev-btn,
+  .next-btn,
+  .view-repo-btn {
+    margin: 10px 0;
   }
 }
