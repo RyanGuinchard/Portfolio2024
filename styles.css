@@ -101,7 +101,6 @@ main h2 {
   font-size: 24pt;
   font-weight: 300;
   text-align: left;
-  width: 70%;
   margin-left: 70px;
   margin-bottom: 30px;
 }
@@ -111,7 +110,8 @@ main h2 {
 }
 
 .contact-page h2,
-.projects-page h2 {
+.projects-page h2,
+.about-page h2 {
     text-align: center;
     width: 100%;
     margin: 20px auto;
@@ -313,6 +313,64 @@ main .btn:hover {
   color: #5c469c;
 }
 
+/*About page*/
+.about-page main {
+  padding: 20px;
+}
+
+.about-page .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.about-page .about-section,
+.about-page .skills-section,
+.about-page .experience-section {
+  width: 80%;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.about-page h3 {
+  color: #d4adfc;
+  border-bottom: 2px solid #5c469c;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.about-page p {
+  color: #d4adfc;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.about-page .skills-section ul {
+  list-style: none;
+  padding: 0;
+  width: 50%;
+  max-width: 300px;
+}
+
+.about-page .skills-section li {
+  background-color: #5c469c;
+  color: #d4adfc;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.about-page .experience-section p {
+  margin-bottom: 15px;
+}
+
+.about-page .flex-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 /*Responsive Design*/
 @media only screen and (min-width: 1200px) {
   /* Styles for full desktop screens */
@@ -390,6 +448,18 @@ main .btn:hover {
   .contact-page .contact-box {
     margin-bottom: 50px;
   }
+
+  .about-page .content-wrapper,
+  .about-page .about-section,
+  .about-page .skills-section,
+  .about-page .experience-section {
+      width: 100%;
+  }
+
+  .about-page .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -454,8 +524,48 @@ main .btn:hover {
     max-width: 200px;
   }
 
-  .contact-page .contact-box {
-    margin-bottom: 50px;
+  .contact-page .container {
+    justify-content: center;
+    margin-top: 50px; /* Adjust the top margin as needed for spacing */
+    margin-bottom: 50px; /* Adjust the bottom margin as needed for spacing */
+  }
+
+  .contact-box {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .contact-box h3 {
+    font-size: 20px; 
+  }
+
+  .contact-box label {
+    font-size: 14px; 
+  }
+
+  .contact-box .contact-input {
+    width: 100%;
+    min-width: 100%;
+    padding: 8px; 
+    font-size: 14px; 
+  }
+
+  .contact-box .submit-btn {
+    width: 100%;
+    font-size: 16px; 
+    padding: 12px; 
+  }
+
+  .contact-box ul {
+    font-size: 14px; 
+  }
+
+  .contact-box li {
+    margin: 10px auto 20px auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 14px; 
   }
 
   .carousel-container{
@@ -471,5 +581,17 @@ main .btn:hover {
   .next-btn,
   .view-repo-btn {
     margin: 10px 0;
+  }
+
+  .about-page .content-wrapper,
+  .about-page .about-section,
+  .about-page .skills-section,
+  .about-page .experience-section {
+      width: 100%;
+  }
+
+  .about-page .flex-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
