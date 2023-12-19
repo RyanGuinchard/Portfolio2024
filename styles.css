@@ -146,7 +146,6 @@ main .btn:visited {
   border: 2px solid #0c134f;
   border-radius: 5px;
   margin-left: 70px;
-  margin-top: -50px;
   font-size: 22px;
   text-align: center;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -464,6 +463,10 @@ main .btn:hover {
 
 @media only screen and (max-width: 767px) {
   /* Styles for mobile devices */
+
+  main {
+    overflow-x: hidden;
+  }
   .top-menu {
     flex-direction: column;
     align-items: center;
@@ -492,6 +495,9 @@ main .btn:hover {
   }
 
   .heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
@@ -499,7 +505,7 @@ main .btn:hover {
 
   .heading-wrapper h1 {
     text-align: center;
-    margin: 0 auto 40px;
+    margin: 0 auto 40px auto;
     width: 90%;
   }
 
