@@ -49,7 +49,7 @@ header {
 }
 
 .top-menu li {
-  margin: 0 10px;
+  /* margin: 0 10px; */
   font-size: 14pt;
 }
 
@@ -500,11 +500,13 @@ main .btn:hover {
   .heading-wrapper h1 {
     text-align: center;
     margin: 0 auto 40px;
+    width: 90%;
   }
 
   .heading-wrapper h2 {
     text-align: center;
     margin: 0 auto;
+    width: 90%;
   }
 
   .image-wrapper {
@@ -534,6 +536,7 @@ main .btn:hover {
     width: 100%;
     max-width: 400px;
     margin: auto;
+    margin-bottom: 30px;
   }
 
   .contact-box h3 {
