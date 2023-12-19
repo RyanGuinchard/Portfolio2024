@@ -371,10 +371,11 @@ main .btn:hover {
 }
 
 /*Responsive Design*/
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1900px) {
   /* Styles for full desktop screens */
   main .btn:link {
     margin-bottom: 75px;
+    margin-top: -150px;
   }
 
   .top-menu li {
