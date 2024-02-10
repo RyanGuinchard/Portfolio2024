@@ -28,6 +28,13 @@ body {
   overflow: auto;
 }
 
+.border-container > main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 header {
     display: flex;
     justify-content: center;
@@ -78,6 +85,7 @@ main {
 .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .contact-page .container {
@@ -92,7 +100,7 @@ main h1 {
   font-weight: 300;
   text-align: left;
   margin-bottom: 40px;
-  margin-left: 70px;
+  margin-left: 30px;
 }
 
 main h2 {
@@ -101,7 +109,7 @@ main h2 {
   font-size: 24pt;
   font-weight: 300;
   text-align: left;
-  margin-left: 70px;
+  margin-left: 30px;
   margin-bottom: 30px;
 }
 
@@ -113,19 +121,20 @@ main h2 {
 .projects-page h2,
 .about-page h2 {
     text-align: center;
-    width: 100%;
+    width: 50%;
     margin: 20px auto;
 }
 
 .heading-wrapper {
   display: flex;
   flex-direction: column;
-  width: 46%;
+  width: 100%;
 }
 
 .image-wrapper {
-  width: 47%;
+  width: 60%;
   display: flex;
+  align-self: flex-end;
 }
 
 main img {
@@ -137,7 +146,7 @@ main img {
 
 main .btn:link,
 main .btn:visited {
-  display: inline-block;
+  display: block;
   width: 300px;
   padding: 10px 20px;
   background-color: #5c469c;
@@ -145,7 +154,7 @@ main .btn:visited {
   text-decoration: none;
   border: 2px solid #0c134f;
   border-radius: 5px;
-  margin-left: 70px;
+  margin-left: 30px;
   font-size: 22px;
   text-align: center;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -273,11 +282,14 @@ main .btn:hover {
 
 
 .carousel-item img {
-  max-width: 100%;
+  width: 100%;
+  max-width: none;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border: 0;
+  object-fit: cover;
+  object-position: center;
 }
 
 .repo-link {
@@ -347,6 +359,7 @@ main .btn:hover {
 
 .about-page .skills-section ul {
   list-style: none;
+  margin: 5px;
   padding: 0;
   width: 50%;
   max-width: 300px;
@@ -380,10 +393,6 @@ main .btn:hover {
 /*Responsive Design*/
 @media only screen and (min-width: 1900px) {
   /* Styles for full desktop screens */
-  main .btn:link {
-    margin-bottom: 75px;
-    margin-top: -120px;
-  }
 
   .top-menu li {
     margin: 0 25px;
@@ -467,6 +476,14 @@ main .btn:hover {
     flex-direction: column;
     align-items: center;
   }
+
+  .carousel-container{
+    width: 100%;
+    max-width: 100%;
+  }
+  .carousel-item img {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -535,15 +552,15 @@ main .btn:hover {
   }
 
   main .btn:link {
-    margin: 0 auto 20px;
+    margin: 20px auto 20px;
     width: 100%;
     max-width: 200px;
   }
 
   .contact-page .container {
     justify-content: center;
-    margin-top: 50px; /* Adjust the top margin as needed for spacing */
-    margin-bottom: 50px; /* Adjust the bottom margin as needed for spacing */
+    margin-top: 50px;
+    margin-bottom: 50px; 
   }
 
   .contact-box {
@@ -587,6 +604,10 @@ main .btn:hover {
 
   .carousel-container{
     width: 100%;
+    max-width: 100%;
+  }
+  .carousel-item img {
+    width: 200%;
   }
 
   .carousel-btns {
