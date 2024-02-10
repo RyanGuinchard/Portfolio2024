@@ -282,11 +282,14 @@ main .btn:hover {
 
 
 .carousel-item img {
-  max-width: 100%;
+  width: 100%;
+  max-width: none;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border: 0;
+  object-fit: cover;
+  object-position: center;
 }
 
 .repo-link {
@@ -473,6 +476,14 @@ main .btn:hover {
     flex-direction: column;
     align-items: center;
   }
+
+  .carousel-container{
+    width: 100%;
+    max-width: 100%;
+  }
+  .carousel-item img {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -548,8 +559,8 @@ main .btn:hover {
 
   .contact-page .container {
     justify-content: center;
-    margin-top: 50px; /* Adjust the top margin as needed for spacing */
-    margin-bottom: 50px; /* Adjust the bottom margin as needed for spacing */
+    margin-top: 50px;
+    margin-bottom: 50px; 
   }
 
   .contact-box {
@@ -593,6 +604,10 @@ main .btn:hover {
 
   .carousel-container{
     width: 100%;
+    max-width: 100%;
+  }
+  .carousel-item img {
+    width: 200%;
   }
 
   .carousel-btns {
