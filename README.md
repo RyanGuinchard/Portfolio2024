@@ -17,7 +17,7 @@ Here are some items I plan to work on or add to this portfolio:
 
 ## Feedback
 
-I welcome any feedback, suggestions, or questions you may have. Feel free to reach out to me via email at [your@email.com](mailto:your@email.com) or through [my website](https://www.yourwebsite.com/contact).
+I welcome any feedback, suggestions, or questions you may have. Feel free to reach out to me via email at [ryanguinchard9@hotmail.com](mailto:ryanguinchard9@hotmail.com) or through [www.ryanguinchard.com](https://www.ryanguinchard.com).
 
 Thank you for visiting my portfolio!
 
